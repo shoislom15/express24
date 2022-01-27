@@ -1,0 +1,114 @@
+#modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .box{
+            border-radius: 8px;
+            overflow: hidden;
+            .top{
+                position: relative;
+
+                #modalImg{
+                    object-fit: cover;
+                    max-width: 100%;
+                    max-height: 250px;
+                    height: auto;
+                }
+
+                #hideModal{
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    height: 30px;
+                    width: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 300;
+                }
+            }
+
+            .bottom{
+                #modalComment{
+                    font-size: 14px;
+                    color: #5e6366;
+                }
+
+                .modalItem{
+                    font-size: 17px;
+
+                    #price{
+                        font-weight: 500;
+                    }
+
+                    .currency{
+                        font-weight: 500;
+                    }
+
+                    .btns{
+                        height: 30px !important;
+                        display: flex;
+                        .btn{
+                            border: 1px solid black;
+                            margin: 0;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .mines-btn{
+                            border-radius: 5px 0 0 5px;
+                            margin-right: -1px;
+                        }
+                        .plus-btn{
+                            border-radius: 0 5px 5px 0;
+                        }
+                    }
+
+                }
+
+                #modalQuantity{
+                    width: 30px;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                }
+
+                #modalTotalPrice{
+                    width: 70px;
+                    border: none;
+                    outline: none;
+                }
+
+                #modalQoshish{
+                    background-color: #F9E752;
+                }
+
+                #modalTitle{
+                    border: none !important;
+                }
+
+                
+            }
+        }
+
+    }
+}
+
+input{
+    outline: none;
+}

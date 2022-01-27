@@ -1,0 +1,125 @@
+.owner {
+  #ownerImg,
+  #ownerInfoImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .ownerInfoWrapper {
+    position: relative;
+    .ownerInfo {
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      right: 30px;
+    }
+  }
+}
+
+.ownerPage {
+  .ownerSidebar {
+    width: 340px;
+    background-color: #fffced;
+    min-height: 100vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: black;
+
+    ul {
+      li {
+        padding: 10px;
+
+        i {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        h3 {
+          font-size: 16px;
+          font-weight: 500;
+          padding: 0;
+          margin: 0;
+          margin-bottom: 3px;
+        }
+        p {
+          font-size: 12px;
+          padding: 0;
+          margin: 0;
+          color: #5e6366;
+        }
+
+        &:hover {
+          background: rgba(255, 220, 3, 0.65);
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .ownerLogo {
+      width: 200px;
+    }
+  }
+
+  .ownerAdmin {
+    flex: 1;
+    .headerOwner {
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  #ownerImg,
+  #ownerInfoImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .ownerInfoWrapper {
+    position: relative;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    .ownerInfo {
+      background-color: white;
+      color: black;
+      border-radius: 8px;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      right: 30px;
+    }
+  }
+}
+
+#sectionsOwner {
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 12px;
+    color: #5e6366;
+    margin-bottom: 35px;
+  }
+}
+.ownerSidebar {
+  ul {
+    li {
+      cursor: pointer;
+    }
+  }
+}

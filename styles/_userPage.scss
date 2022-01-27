@@ -1,0 +1,152 @@
+.userPage {
+  header {
+    width: 100%;
+    background-color: white;
+    z-index: 100000000000;
+    .navBar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+    }
+    .logo {
+      width: 165px;
+      img {
+        width: 100%;
+      }
+    }
+    nav {
+      ul {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+
+        .searchLi {
+          input {
+            border-right: none;
+          }
+          span {
+            background-color: white;
+            border-left: none;
+            i {
+              color: black;
+            }
+          }
+        }
+        #userImg,
+        #userImgLi {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        .userLi {
+          position: relative;
+          .userInfo {
+            background-color: white;
+            color: black;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            top: 50px;
+            right: 30px;
+          }
+        }
+      }
+    }
+  }
+  #foodsSection {
+    .foodsBtn {
+      background-color: #f0f0f0 !important;
+      border-radius: 8px;
+      padding: 12px 20px;
+      font-weight: 500;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+  .productsWrapper {
+    .foodCard {
+      border-radius: 8px;
+      .imgCard {
+        position: relative;
+        transition: 1s;
+        img {
+          border-radius: 7px;
+          height: 200px;
+          object-fit: cover;
+        }
+
+        .blackDrop{
+          background-color: rgba(0, 0, 0, 0.5);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          opacity: 0;
+
+          button {
+            font-size: 13px;
+            font-weight: 500;
+          }
+
+        }
+      }
+      &:hover {
+        .blackDrop{
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+  footer {
+    background-color: #2c2c2c;
+    color: white !important;
+    a {
+      color: white !important;
+    }
+    .rightIcon {
+      ul {
+        list-style-type: none;
+        li {
+          margin-left: 20px;
+        }
+      }
+    }
+    .upFooter {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .arrowUp {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 0, 0.8);
+        a {
+          color: black !important;
+          i {
+            position: relative;
+            top: 10px;
+            left: 12px;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+#menuWrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}

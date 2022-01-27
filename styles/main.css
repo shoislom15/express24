@@ -1,0 +1,609 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.btn {
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-yellow {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #ffec00;
+  border-radius: 7px;
+}
+
+.btn-primary {
+  background-color: #cf245f;
+  background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
+  border: 0;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.125rem;
+  /* 18px */
+  line-height: 1.75rem;
+  /* 28px */
+  padding: 8px 16px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.sidebarHide {
+  transition: 0.3s;
+  transform: translateX(-200%);
+  position: absolute;
+}
+
+@media (min-width: 1024px) {
+  .button-76 {
+    font-size: 1.5rem;
+    /* 24px */
+    padding: 1rem 1.5rem;
+    line-height: 2rem;
+    /* 32px */
+  }
+}
+input,
+textarea {
+  outline: none;
+}
+
+.fa-trash {
+  color: #922929 !important;
+}
+
+.fa-edit {
+  color: #ffec00 !important;
+}
+
+.sign {
+  min-height: 100vh;
+  background-image: url("https://www.gazeta.uz/media/img/2017/10/bOJmvD15076366478471_b.jpg");
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.sign .signBtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign .signBtns img {
+  width: 200px;
+}
+.sign .signup,
+.sign .signin {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign form {
+  background-color: rgba(0, 0, 0, 0.247);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+}
+.sign form input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #e0e40b;
+  background-color: transparent;
+}
+.sign form input::placeholder {
+  color: white;
+}
+
+.userPage header {
+  width: 100%;
+  background-color: white;
+  z-index: 100000000000;
+}
+.userPage header .navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.userPage header .logo {
+  width: 165px;
+}
+.userPage header .logo img {
+  width: 100%;
+}
+.userPage header nav ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.userPage header nav ul .searchLi input {
+  border-right: none;
+}
+.userPage header nav ul .searchLi span {
+  background-color: white;
+  border-left: none;
+}
+.userPage header nav ul .searchLi span i {
+  color: black;
+}
+.userPage header nav ul #userImg,
+.userPage header nav ul #userImgLi {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.userPage header nav ul .userLi {
+  position: relative;
+}
+.userPage header nav ul .userLi .userInfo {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+}
+.userPage #foodsSection .foodsBtn {
+  background-color: #f0f0f0 !important;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 500;
+}
+.userPage #foodsSection .foodsBtn a {
+  color: black;
+  text-decoration: none;
+}
+.userPage .productsWrapper .foodCard {
+  border-radius: 8px;
+}
+.userPage .productsWrapper .foodCard .imgCard {
+  position: relative;
+  transition: 1s;
+}
+.userPage .productsWrapper .foodCard .imgCard img {
+  border-radius: 7px;
+  height: 200px;
+  object-fit: cover;
+}
+.userPage .productsWrapper .foodCard .imgCard .blackDrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
+.userPage .productsWrapper .foodCard .imgCard .blackDrop button {
+  font-size: 13px;
+  font-weight: 500;
+}
+.userPage .productsWrapper .foodCard:hover .blackDrop {
+  opacity: 1 !important;
+}
+.userPage footer {
+  background-color: #2c2c2c;
+  color: white !important;
+}
+.userPage footer a {
+  color: white !important;
+}
+.userPage footer .rightIcon ul {
+  list-style-type: none;
+}
+.userPage footer .rightIcon ul li {
+  margin-left: 20px;
+}
+.userPage footer .upFooter {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.userPage footer .upFooter .arrowUp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 0, 0.8);
+}
+.userPage footer .upFooter .arrowUp a {
+  color: black !important;
+}
+.userPage footer .upFooter .arrowUp a i {
+  position: relative;
+  top: 10px;
+  left: 12px;
+  font-size: 30px;
+}
+
+#menuWrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.adminPage .adminSidebar {
+  width: 340px;
+  background-color: #fffced;
+  min-height: 100vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: black;
+  color: black;
+}
+.adminPage .adminSidebar ul li {
+  padding: 10px;
+}
+.adminPage .adminSidebar ul li i {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adminPage .adminSidebar ul li h3 {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3px;
+}
+.adminPage .adminSidebar ul li p {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  color: #5e6366;
+}
+.adminPage .adminSidebar ul li:hover {
+  background: rgba(255, 220, 3, 0.65);
+  border-radius: 10px;
+}
+.adminPage .adminSidebar .adminLogo {
+  width: 200px;
+}
+.adminPage .mainAdmin {
+  flex: 1;
+}
+.adminPage .mainAdmin .headerAdmin {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.adminPage #adminImg,
+.adminPage #adminInfoImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.adminPage .adminInfoWrapper {
+  position: relative;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.adminPage .adminInfoWrapper .adminInfo {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+.adminSidebar ul li {
+  cursor: pointer;
+}
+
+#sectionsAdmin h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+#sectionsAdmin p {
+  font-size: 12px;
+  color: #5e6366;
+  margin-bottom: 35px;
+}
+#sectionsAdmin #qoshish .container-fluid {
+  padding-right: 120px !important;
+}
+#sectionsAdmin #qoshish .controlBtnAdmin {
+  margin-bottom: 35px;
+}
+#sectionsAdmin #qoshish .controlBtnAdmin button {
+  width: 150px;
+  border-radius: 8px;
+}
+#sectionsAdmin #qoshish .controlBtnAdmin button:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #ffec00;
+}
+#sectionsAdmin #qoshish form {
+  width: 100%;
+}
+#sectionsAdmin #qoshish form input {
+  background: #ffffff;
+  border: 1px solid #c9c9c9;
+  border-radius: 8px;
+}
+#sectionsAdmin #qoshish form input::placeholder {
+  color: #6f6f6f;
+}
+#sectionsAdmin #qoshish #kategoriyaForm button {
+  margin: 55px auto auto 0 !important;
+  width: 220px;
+}
+#sectionsAdmin #qoshish #taomForm input {
+  width: 50%;
+}
+#sectionsAdmin #qoshish #taomForm select {
+  width: 50%;
+  outline: none;
+}
+#sectionsAdmin #qoshish #taomForm textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+  background: #ffffff;
+  border: 1px solid #c9c9c9;
+  border-radius: 8px;
+}
+#sectionsAdmin #qoshish #taomForm textarea::placeholder {
+  color: #6f6f6f;
+}
+#sectionsAdmin #qoshish #taomForm button {
+  margin: 55px auto auto 0 !important;
+  width: 220px;
+}
+#sectionsAdmin #qoshish #taomForm select {
+  background: #ffffff;
+  border: 1px solid #c9c9c9;
+  border-radius: 8px;
+}
+
+.adminSidebar {
+  transition: 0.5s all;
+}
+
+#tableBodyUsers input {
+  border: none;
+  outline: none;
+}
+#tableBodyUsers .fa-check {
+  color: green;
+}
+
+.adminLogo img {
+  width: 200px;
+}
+
+.owner #ownerImg,
+.owner #ownerInfoImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.owner .ownerInfoWrapper {
+  position: relative;
+}
+.owner .ownerInfoWrapper .ownerInfo {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+.ownerPage .ownerSidebar {
+  width: 340px;
+  background-color: #fffced;
+  min-height: 100vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: black;
+}
+.ownerPage .ownerSidebar ul li {
+  padding: 10px;
+}
+.ownerPage .ownerSidebar ul li i {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ownerPage .ownerSidebar ul li h3 {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3px;
+}
+.ownerPage .ownerSidebar ul li p {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  color: #5e6366;
+}
+.ownerPage .ownerSidebar ul li:hover {
+  background: rgba(255, 220, 3, 0.65);
+  border-radius: 10px;
+}
+.ownerPage .ownerSidebar .ownerLogo {
+  width: 200px;
+}
+.ownerPage .ownerAdmin {
+  flex: 1;
+}
+.ownerPage .ownerAdmin .headerOwner {
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.ownerPage #ownerImg,
+.ownerPage #ownerInfoImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.ownerPage .ownerInfoWrapper {
+  position: relative;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.ownerPage .ownerInfoWrapper .ownerInfo {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+#sectionsOwner h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+#sectionsOwner p {
+  font-size: 12px;
+  color: #5e6366;
+  margin-bottom: 35px;
+}
+
+.ownerSidebar ul li {
+  cursor: pointer;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+#modal .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#modal .row .box {
+  border-radius: 8px;
+  overflow: hidden;
+}
+#modal .row .box .top {
+  position: relative;
+}
+#modal .row .box .top #modalImg {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 250px;
+  height: auto;
+}
+#modal .row .box .top #hideModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 300;
+}
+#modal .row .box .bottom #modalComment {
+  font-size: 14px;
+  color: #5e6366;
+}
+#modal .row .box .bottom .modalItem {
+  font-size: 17px;
+}
+#modal .row .box .bottom .modalItem #price {
+  font-weight: 500;
+}
+#modal .row .box .bottom .modalItem .currency {
+  font-weight: 500;
+}
+#modal .row .box .bottom .modalItem .btns {
+  height: 30px !important;
+  display: flex;
+}
+#modal .row .box .bottom .modalItem .btns .btn {
+  border: 1px solid black;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#modal .row .box .bottom .modalItem .btns .mines-btn {
+  border-radius: 5px 0 0 5px;
+  margin-right: -1px;
+}
+#modal .row .box .bottom .modalItem .btns .plus-btn {
+  border-radius: 0 5px 5px 0;
+}
+#modal .row .box .bottom #modalQuantity {
+  width: 30px;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+#modal .row .box .bottom #modalTotalPrice {
+  width: 70px;
+  border: none;
+  outline: none;
+}
+#modal .row .box .bottom #modalQoshish {
+  background-color: #F9E752;
+}
+#modal .row .box .bottom #modalTitle {
+  border: none !important;
+}
+
+input {
+  outline: none;
+}
+
+/*# sourceMappingURL=main.css.map */
