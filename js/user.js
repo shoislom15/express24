@@ -13,8 +13,8 @@ const renderMainPage = (data) => {
     const button = createElement("button", "btn foodsBtn", "", menuWrapper);
     const a = createElement("a", "", `${item[0]}`, button);
     a.href = `#${item[0]}`;
-    const h2 = createElement("h2", "text-uppercase", ` ${item[1].category}`, productsWrapper);
-    h2.id = `${item[1].category}`;
+    const h3 = createElement("h3", "text-uppercase", ` ${item[1].category}`, productsWrapper);
+    h3.id = `${item[1].category}`;
     const cardRowDiv = createElement(
       "div",
       "row mt-3 mb-5",
